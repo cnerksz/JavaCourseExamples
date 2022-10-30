@@ -1,0 +1,10 @@
+Select*From Customers
+Select CustomerName from Customers
+select*from customers where CustomerName='Alfreds Futterkiste' or CustomerName='Around the Horn'
+select*from Products order by Price
+select*from Products order by Price asc--desc
+select count(*) from Products
+select count(*) Adet from pRoDucts
+select CategoryID,count(*) from products where price<20 group by CategoryID having count(*)<10
+select Products.productId,products.productname,products.price,Categories.categoryname from products inner join categories on categories.categoryId=products.productId
+SELECT * FROM customers c left join orders o on c.customerID=o.customerID where o.customerID is null order by customerName
